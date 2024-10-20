@@ -1,8 +1,11 @@
 // Components
-@import './components/button';
+@import './components/cardhome';
+@import './components/timeline';
 
 // Layout
 @import './layout/header';
+@import './layout/main';
+@import './layout/team';
 
 // Utils
 @import './utils/reset';
