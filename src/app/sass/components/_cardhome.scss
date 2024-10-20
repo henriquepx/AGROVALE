@@ -7,6 +7,7 @@
     align-items: center;
     justify-content: center;
     gap: 1rem;
+    
     .cardhome-container {
         display: flex;
         align-items: center;
@@ -19,6 +20,7 @@
         margin-top: -5rem;
         z-index: 10;
         border-radius: 15px;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
         .card-unit {
             display: flex;
             flex-direction: column;
