@@ -1,0 +1,87 @@
+@import '../utils/variables';
+
+footer {
+    width: 100%;
+    height: 100%;
+    background-color: #432c24;
+    .footer-container {
+        max-width: 1300px;
+        width: 100%;
+        margin: 0 auto;
+        padding: 0.5rem 1.2rem;
+        display: flex;
+        flex-direction: column;
+        .footer-top {
+            display: flex;
+            justify-content: space-between;
+            padding: 1.5rem .5rem 3rem .5rem;
+            .footer-top-img {
+                width: 130px;
+                margin-bottom: auto;
+            }
+            .footer-top-contact {
+                display: flex;
+                flex-direction: column;
+                gap: 1.2rem;
+                h2 {
+                    color: #fff;
+                    font-size: 1.5rem;
+                    font-weight: 700;
+                }
+                .footer-top-contact-link {
+                    display: flex;
+                    align-items: center;
+                    gap: .5rem;
+                    color: #fff;
+                    p {
+                        color: #fff;
+                    }
+                }
+            }
+            .footer-top-links-page {
+                display: flex;
+                flex-direction: column;
+                gap: 1.2rem;
+                h2 {
+                    color: #fff;
+                    font-size: 1.5rem;
+                    font-weight: 700;
+                }
+                ul {
+                    display: flex;
+                    flex-direction: column;
+                    gap: .5rem;
+                    li {
+                        a {
+                            color: #fff;
+                            &:hover {
+                                text-decoration: underline;
+                            }
+                        }
+                    }
+                }
+            }
+            .footer-top-social {
+                display: flex;
+                align-items: center;
+                gap: 1rem;
+                margin-bottom: auto;
+                a {
+                    color: #fff;
+                    font-size: 1.5rem;
+                }
+            }
+        }
+
+        .footer-bottom {
+            border-top: 1px solid rgb(255, 255, 255, 0.4);
+            padding: 2rem .5rem;
+            text-align: center;
+            color: #fff;
+            a {
+                color: #fff;
+                text-decoration: underline;
+            }
+        }
+    }
+}

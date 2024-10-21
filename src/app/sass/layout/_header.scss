@@ -1,0 +1,96 @@
+@import '../utils/variables';
+
+header {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    .headertop {
+        width: 100%;
+        background-color: #441C1C;
+        .headertopsize {
+            max-width: 1300px;
+            width: 100%;
+            margin: 0 auto;
+            padding: .5rem 1.2rem;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            .header-contact {
+                display: flex;
+                align-items: center;
+                gap: 1.5rem;
+                .header-contact-link-left, .header-contact-link-right {
+                    a {
+                        display: flex;
+                        align-items: center;
+                        gap: .5rem;
+                        color: #fff;
+                        p {
+                            color: #fff;
+                        }
+                    }
+                }
+                .divider-header-contact {
+                    color: #fff;
+                }
+            }
+            .header-socialmedia {
+                display: flex;
+                align-items: center;
+                gap: .7rem;
+                a {
+                    color: #fff;
+                    font-size: 1.3rem;
+                }
+            }
+        }
+    }
+    .headerbottom {
+        width: 100%;
+        background-color: #fff;
+        .headerbottomsize {
+            max-width: 1300px;
+            width: 100%;
+            margin: 0 auto;
+            padding: .5rem 1.2rem;
+
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            .header-logo-links {
+                display: flex;
+                align-items: center;
+                gap: 4rem;
+                .header-nav-links {
+                    ul {
+                        display: flex;
+                        align-items: center;
+                        gap: 1.5rem;
+                        li {
+                            &:nth-child(1) {
+                                text-decoration: underline;
+                            }
+                            &:hover {
+                                text-decoration: underline;
+                            }
+                            a {
+                                color: #441C1C;
+                                font-weight: 600;
+                                font-size: 1.1rem;
+                                
+                            }
+                        }
+                    }
+                }
+            }
+            .header-logo-flags {
+                display: flex;
+                align-items: center;
+                gap: .5rem;
+                img {
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}
