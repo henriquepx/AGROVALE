@@ -1,0 +1,90 @@
+@import '../utils/variables';
+
+.cardimportexport {
+    display: flex;
+    align-items: stretch;
+    width: 100%;
+    height: 100%;
+    
+    .cardimportexport-image {
+        flex: 1;
+        position: relative;
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .cardimportexport-overlay {
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 110px;
+            height: 110px;
+            background-color: rgb(253, 253, 253);
+            border-radius: 50%;
+            margin-right: -3.4rem;
+            margin-top: 2rem;
+        }
+    }
+
+    .cardimportexport-text {
+        flex: 1;
+        padding: 3rem 6rem;
+        background-color: #441C1C;
+        color: #fff;
+        display: flex;
+        flex-direction: column;
+        .cardimportexport-text-p {
+            line-height: 1.5;
+            margin: 10px 0;
+        }
+        h1 {
+            font-size: 2rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+        }
+        .info-section {
+            display: grid;
+            grid-template-rows: 1fr 1fr;
+            gap: 1rem;
+            margin-top: 3rem;
+            .info-item {
+                display: flex;
+                width: 100%;
+                justify-content: center;
+                align-items: center;
+                gap: .6rem;
+                .title-info-content {
+                    font-size: 1.2rem;
+                    font-weight: bold;
+                    margin-bottom: 7px;
+                }
+                .icon {
+                    font-size: 4rem;
+                    color: #ffffff; 
+                    border: 1px solid #fff;
+                    border-radius: 50%;
+                    padding: .5rem;
+                }
+            }
+        }
+    }
+
+    @media (max-width: 768px) {
+        flex-direction: column;
+
+        .cardimportexport-image,
+        .cardimportexport-text {
+            width: 100%;
+            height: auto;
+        }
+
+        .cardimportexport-text {
+            padding: 1.5rem;
+            
+            .info-section {
+                grid-template-columns: 1fr;
+            }
+        }
+    }
+}

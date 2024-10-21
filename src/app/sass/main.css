@@ -54,14 +54,28 @@
   width: 100%;
   margin: 0 auto;
 }
-.container #timeline {
+.container .container-size {
+  margin: 6rem 0;
+  padding: 0 1rem;
+}
+.container .container-size .timeline-header-title {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 700;
+}
+.container .container-size .timeline-header-desc {
+  text-align: center;
+  font-size: 1rem;
+  font-weight: 500;
+}
+.container .container-size #timeline {
   width: 100%;
   margin: 30px auto;
   position: relative;
   padding: 0 10px;
   transition: all 0.4s ease;
 }
-.container #timeline:before {
+.container .container-size #timeline:before {
   content: "";
   width: 3px;
   height: 100%;
@@ -70,22 +84,22 @@
   top: 0;
   position: absolute;
 }
-.container #timeline:after {
+.container .container-size #timeline:after {
   content: "";
   clear: both;
   display: table;
   width: 100%;
 }
-.container #timeline .timeline-item {
+.container .container-size #timeline .timeline-item {
   margin-bottom: 20px;
   position: relative;
 }
-.container #timeline .timeline-item:after, .container #timeline .timeline-item:before {
+.container .container-size #timeline .timeline-item:after, .container .container-size #timeline .timeline-item:before {
   content: "";
   display: block;
   clear: both;
 }
-.container #timeline .timeline-item .timeline-icon {
+.container .container-size #timeline .timeline-item .timeline-icon {
   background: #441C1C;
   width: 40px;
   height: 40px;
@@ -96,12 +110,12 @@
   margin-left: -19px;
   border-radius: 50%;
 }
-.container #timeline .timeline-item .timeline-icon svg {
+.container .container-size #timeline .timeline-item .timeline-icon svg {
   position: relative;
   top: 10px;
   left: 10px;
 }
-.container #timeline .timeline-item .timeline-content {
+.container .container-size #timeline .timeline-item .timeline-content {
   width: 45%;
   background: #fff;
   padding: 20px;
@@ -109,7 +123,7 @@
   border-radius: 5px;
   transition: all 0.3s ease;
 }
-.container #timeline .timeline-item .timeline-content:before {
+.container .container-size #timeline .timeline-item .timeline-content:before {
   content: "";
   position: absolute;
   left: 45%;
@@ -120,7 +134,7 @@
   border-bottom: 7px solid transparent;
   border-left: 7px solid #441C1C;
 }
-.container #timeline .timeline-item .timeline-content h2 {
+.container .container-size #timeline .timeline-item .timeline-content h2 {
   padding: 15px;
   background: #441C1C;
   color: #fff;
@@ -128,15 +142,13 @@
   font-weight: 300;
   border-radius: 3px 3px 0 0;
 }
-.container #timeline .timeline-item .timeline-content p {
+.container .container-size #timeline .timeline-item .timeline-content p {
   margin-top: 12px;
 }
-
-#timeline .timeline-item .timeline-content.right {
+.container .container-size #timeline .timeline-item .timeline-content.right {
   float: right;
 }
-
-#timeline .timeline-item .timeline-content.right:before {
+.container .container-size #timeline .timeline-item .timeline-content.right:before {
   right: 45%;
   left: inherit;
   border-left: 0;
@@ -311,6 +323,92 @@
   background: rgba(0, 0, 0, 0.8);
   opacity: 0;
   transition: all ease 500ms;
+}
+
+.cardimportexport {
+  display: flex;
+  align-items: stretch;
+  width: 100%;
+  height: 100%;
+}
+.cardimportexport .cardimportexport-image {
+  flex: 1;
+  position: relative;
+}
+.cardimportexport .cardimportexport-image img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.cardimportexport .cardimportexport-image .cardimportexport-overlay {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 110px;
+  height: 110px;
+  background-color: rgb(253, 253, 253);
+  border-radius: 50%;
+  margin-right: -3.4rem;
+  margin-top: 2rem;
+}
+.cardimportexport .cardimportexport-text {
+  flex: 1;
+  padding: 3rem 6rem;
+  background-color: #441C1C;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+}
+.cardimportexport .cardimportexport-text .cardimportexport-text-p {
+  line-height: 1.5;
+  margin: 10px 0;
+}
+.cardimportexport .cardimportexport-text h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+.cardimportexport .cardimportexport-text .info-section {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  gap: 1rem;
+  margin-top: 3rem;
+}
+.cardimportexport .cardimportexport-text .info-section .info-item {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  gap: 0.6rem;
+}
+.cardimportexport .cardimportexport-text .info-section .info-item .title-info-content {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 7px;
+}
+.cardimportexport .cardimportexport-text .info-section .info-item .icon {
+  font-size: 4rem;
+  color: #ffffff;
+  border: 1px solid #fff;
+  border-radius: 50%;
+  padding: 0.5rem;
+}
+@media (max-width: 768px) {
+  .cardimportexport {
+    flex-direction: column;
+  }
+  .cardimportexport .cardimportexport-image,
+  .cardimportexport .cardimportexport-text {
+    width: 100%;
+    height: auto;
+  }
+  .cardimportexport .cardimportexport-text {
+    padding: 1.5rem;
+  }
+  .cardimportexport .cardimportexport-text .info-section {
+    grid-template-columns: 1fr;
+  }
 }
 
 header {

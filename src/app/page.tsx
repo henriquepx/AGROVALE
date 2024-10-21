@@ -5,6 +5,7 @@ import Main from "./layout/Main";
 import Team from "./layout/Team";
 import Footer from "./layout/Footer";
 import Video from "./components/Video";
+import CardImportExport from "./components/CardImportExport";
 
 export default function Home() {
   return (
@@ -13,8 +14,9 @@ export default function Home() {
       <Main />
       <CardHome />
       <Team />
-      <Video />
+      <CardImportExport />
       <Timeline />
+      <Video />
       <Footer />
     </div>
   );

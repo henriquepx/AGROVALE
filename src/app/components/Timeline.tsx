@@ -4,7 +4,11 @@ import { FaHandshake, FaGlobe } from "react-icons/fa6";
 const Timeline = () => {
   return (
     <div className="container">
-      <div id="timeline">
+      <div className="container-size">
+        <h1 className="timeline-header-title">Trajetória da Agrovale</h1>
+        <p className="timeline-header-desc">Conheça a linha do tempo do início. Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, quasi ut. Eius quaerat dignissimos obcaecati inventore magni.</p>
+        <p className="timeline-header-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore deserunt officiis perspiciatis.</p>
+        <div id="timeline">
         <div className="timeline-item">
           <div className="timeline-icon">
             <FaPepperHot size={20} color="#ffffff" />
@@ -40,6 +44,7 @@ const Timeline = () => {
             </p>
           </div>
         </div>
+      </div>
       </div>
     </div>
   );
