@@ -20,6 +20,13 @@
   border-radius: 15px;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
+.cardhome .cardhome-container .divider-card {
+  width: 5px;
+  height: 50px;
+  display: block;
+  margin: 0 10px;
+  background-color: #441C1C;
+}
 .cardhome .cardhome-container .card-unit {
   display: flex;
   flex-direction: column;
@@ -335,11 +342,11 @@
   flex: 1;
   position: relative;
 }
-.cardimportexport .cardimportexport-image img {
+.cardimportexport .cardimportexport-image .importexportlogo {
   width: 100%;
   height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 .cardimportexport .cardimportexport-image .cardimportexport-overlay {
   position: absolute;
@@ -351,6 +358,10 @@
   border-radius: 50%;
   margin-right: -3.4rem;
   margin-top: 2rem;
+  background-image: url("/selo.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
 }
 .cardimportexport .cardimportexport-text {
   flex: 1;
@@ -380,7 +391,7 @@
   width: 100%;
   justify-content: center;
   align-items: center;
-  gap: 0.6rem;
+  gap: 2rem;
 }
 .cardimportexport .cardimportexport-text .info-section .info-item .title-info-content {
   font-size: 1.2rem;
@@ -388,11 +399,17 @@
   margin-bottom: 7px;
 }
 .cardimportexport .cardimportexport-text .info-section .info-item .icon {
-  font-size: 4rem;
-  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   border: 1px solid #fff;
   border-radius: 50%;
-  padding: 0.5rem;
+  background-color: #4b3535;
+  padding: 1rem;
+}
+.cardimportexport .cardimportexport-text .info-section .info-item .icon svg {
+  width: 40px;
+  height: 40px;
 }
 @media (max-width: 768px) {
   .cardimportexport {
@@ -409,6 +426,65 @@
   .cardimportexport .cardimportexport-text .info-section {
     grid-template-columns: 1fr;
   }
+}
+
+.pimenta {
+  max-width: 1300px;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  padding: 6rem 1rem;
+}
+.pimenta .pimenta-info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+.pimenta .pimenta-info .imgs-pimenta {
+  position: relative;
+}
+.pimenta .pimenta-info .imgs-pimenta .pimenta-all-img {
+  position: absolute;
+  bottom: -70px;
+  right: -50px;
+  z-index: 1;
+  width: 200px;
+  border-radius: 50%;
+  border: 3px solid #441C1C;
+}
+.pimenta .pimenta-info .imgs-pimenta .pimenta-img {
+  border-top-right-radius: 55px;
+  border-bottom-right-radius: 55px;
+}
+.pimenta .pimenta-info .pimenta-text {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+.pimenta .pimenta-info .pimenta-text h1 {
+  font-size: 1.6rem;
+  font-weight: 700;
+}
+.pimenta .pimenta-info .pimenta-text p {
+  max-width: 34ch;
+}
+.pimenta .pimenta-info .pimenta-text p .bold {
+  font-weight: 700;
+}
+.pimenta .pimenta-info .pimenta-text .pimenta-marker {
+  background-color: #441C1C;
+  padding: 0.4rem;
+  color: #fff;
+  border-left: 10px solid #000000;
+}
+.pimenta .pimenta-info .pimenta-text .pimenta-marker .doyouknow {
+  font-size: 1.2rem;
+  margin-bottom: 15px;
 }
 
 header {
@@ -584,6 +660,96 @@ main .main_size .main_text p {
   padding: 0.4rem;
   color: #fff;
   border-left: 10px solid #000000;
+}
+
+.contact {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+}
+.contact .contact-container {
+  margin: 8rem 0;
+  padding: 0 1rem;
+  display: flex;
+  gap: 25px;
+}
+@media (max-width: 768px) {
+  .contact .contact-container {
+    flex-direction: column;
+  }
+}
+.contact .contact-container .contact-text {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  flex: 1;
+}
+.contact .contact-container .contact-text .title .title-contact {
+  font-size: 18px;
+  font-weight: 800;
+  color: #441C1C;
+}
+.contact .contact-container .contact-text .title p {
+  font-size: 14px;
+  color: #999;
+  margin-bottom: 10px;
+}
+.contact .contact-container .contact-text .info {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+}
+.contact .contact-container .contact-text .info i {
+  font-size: 30px;
+  color: #02434b;
+  margin-right: 15px;
+}
+.contact .contact-container .contact-text .info h4 {
+  font-size: 13px;
+}
+.contact .contact-container .contact-text .info h4 span {
+  display: block;
+  font-size: 13px;
+  color: #999;
+}
+.contact .contact-container .contact-form {
+  flex: 1;
+}
+.contact .contact-container .contact-form form .form-row {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  margin-bottom: 10px;
+}
+.contact .contact-container .contact-form form .form-row .form-group {
+  flex: 1;
+}
+.contact .contact-container .contact-form form .form-row .form-group.full-width {
+  flex: none;
+  width: 100%;
+}
+.contact .contact-container .contact-form form .form-control {
+  padding: 15px;
+  font-size: 14px;
+  background: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  width: 100%;
+}
+.contact .contact-container .contact-form form textarea {
+  height: 150px;
+  resize: none;
+}
+.contact .contact-container .contact-form form button.btn {
+  width: 100%;
+  padding: 12px;
+  border-radius: 8px;
+  background: #441C1C;
+  color: #fff;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
 }
 
 footer {

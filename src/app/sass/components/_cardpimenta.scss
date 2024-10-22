@@ -1,0 +1,60 @@
+@import '../utils/variables';
+
+.pimenta {
+    max-width: 1300px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    padding: 6rem 1rem;
+    .pimenta-info {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+        .imgs-pimenta {
+            position: relative;
+            .pimenta-all-img {
+                position: absolute;
+                bottom: -70px;
+                right: -50px;
+                z-index: 1;
+                width: 200px;
+                border-radius: 50%;
+                border: 3px solid #441C1C;
+            }
+            .pimenta-img {
+                border-top-right-radius: 55px;
+                border-bottom-right-radius: 55px;
+            }
+        }
+        .pimenta-text {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+            h1 {
+                font-size: 1.6rem;
+                font-weight: 700;
+            }
+            p {
+                max-width: 34ch;
+                .bold {
+                    font-weight: 700;
+                }
+            }
+            .pimenta-marker {
+                background-color: #441C1C;
+                padding: .4rem;
+                color: #fff;
+                border-left: 10px solid #000000;
+                .doyouknow {
+                    font-size: 1.2rem;
+                    margin-bottom: 15px;
+                }
+            }
+        }
+    }
+}

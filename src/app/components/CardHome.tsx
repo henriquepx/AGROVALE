@@ -14,7 +14,7 @@ const CardHome = () => {
                     </div>
                     <p>Nossa excelência começa no campo e chega até você com produtos de qualidade e exportação confiável.</p>
                 </div>
-
+                <span className='divider-card'></span>
                 <div className='card-unit'>
                     <div className='card-unit-header'>
                         <span><PiPottedPlantLight  /></span>
@@ -22,7 +22,7 @@ const CardHome = () => {
                     </div>
                     <p>Cuidamos de cada etapa do processo, garantindo produtos frescos, rastreáveis e prontos para o mercado internacional.</p>
                 </div>
-
+                <span className='divider-card'></span>
                 <div className='card-unit'>
                     <div className='card-unit-header'>
                         <span><RiGlobalLine  /></span>

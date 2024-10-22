@@ -4,8 +4,10 @@ import Header from "./layout/Header";
 import Main from "./layout/Main";
 import Team from "./layout/Team";
 import Footer from "./layout/Footer";
-import Video from "./components/Video";
+// import Video from "./components/Video";
 import CardImportExport from "./components/CardImportExport";
+import Contact from "./layout/Contact";
+import CardPimenta from "./components/CardPimenta";
 
 export default function Home() {
   return (
@@ -15,8 +17,10 @@ export default function Home() {
       <CardHome />
       <Team />
       <CardImportExport />
+      <CardPimenta />
       <Timeline />
-      <Video />
+      {/* <Video /> */}
+      <Contact />
       <Footer />
     </div>
   );
