@@ -24,10 +24,10 @@
                 font-weight: 800;
                 color: #441C1C;
               }
-              p {
+              .p-contact {
                 font-size: 14px;
                 color: #999;
-                margin-bottom: 10px;
+                margin: 10px 0;
               }
             }
         
@@ -80,14 +80,18 @@
             border-radius: 8px;
             margin-bottom: 15px;
             width: 100%;
+            input {
+              font-family: 'Montserrat', sans-serif;
+            }
           }
     
           textarea {
             height: 150px;
             resize: none;
+            font-family: 'Montserrat', sans-serif;
           }
     
-          button.btn {
+          .btn {
             width: 100%;
             padding: 12px;
             border-radius: 8px;
@@ -96,6 +100,7 @@
             font-size: 16px;
             border: none;
             cursor: pointer;
+            font-family: 'Montserrat', sans-serif;
           }
         }
       }

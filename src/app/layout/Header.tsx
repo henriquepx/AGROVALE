@@ -16,14 +16,14 @@ const Header = () => {
             <div className='header-contact-link-left'>
               <a href="#">
                 <MdEmail />
-                <p>wpelissari@agrovaleimex.com</p>
+                <p>agrovaleimportacao@gmail.com</p>
               </a> 
             </div>
             <p className='divider-header-contact'>|</p>
             <div className='header-contact-link-right'>
               <a href="#">
                 <MdPhone />
-                <p>+55 027 99943-1779</p>
+                <p>(27) 99530-6419</p>
               </a>
             </div>
           </div>

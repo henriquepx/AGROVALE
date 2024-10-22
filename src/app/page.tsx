@@ -8,6 +8,7 @@ import Footer from "./layout/Footer";
 import CardImportExport from "./components/CardImportExport";
 import Contact from "./layout/Contact";
 import CardPimenta from "./components/CardPimenta";
+import CardCall from "./components/CardCall";
 
 export default function Home() {
   return (
@@ -20,6 +21,7 @@ export default function Home() {
       <CardPimenta />
       <Timeline />
       {/* <Video /> */}
+      <CardCall />
       <Contact />
       <Footer />
     </div>
