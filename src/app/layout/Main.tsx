@@ -7,7 +7,8 @@ const Main = () => {
         <div className='main_text'>
           <h1>Agrovale Importação e Exportação</h1>
           <p>A escolha certa para a comercialização da sua pimenta-do-reino.</p>
-        </div>
+          <a href="#" className='main_button'>Saiba mais</a>
+        </div> 
       </div>
     </main>
   )

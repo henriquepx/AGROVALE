@@ -5,7 +5,7 @@ const CardImportExport = () => {
     return (
         <div className='cardimportexport'>
             <div className='cardimportexport-image'>
-                <img className='importexportlogo' src="/egitoarabia.jpg" alt="Importação e Exportação da Agrovale" />
+                <img className='importexportlogo' src="/egitoarabia2.jpg" alt="Importação e Exportação da Agrovale" />
                 <div className='cardimportexport-overlay'></div>
             </div>
             <div className='cardimportexport-text'>

@@ -15,12 +15,11 @@ const CardPimenta = () => {
                     </div>
                 </div>
                 <div className="imgs-pimenta">
-                    <Image className="pimenta-img" src="/pimentaimg.jpg" alt="Agro Time" width={700} height={700} />
-                    <img className="pimenta-all-img" src="/pimentadoreino.png" alt="Pimenta do Reino" />
+                    <Image className="pimenta-img" src="/AGROVALE.jpg" alt="Agro Time" width={700} height={700} />
                 </div>
-            </div>
+            </div>  
         </section>
-    );
+    );  
 }
 
 export default CardPimenta;

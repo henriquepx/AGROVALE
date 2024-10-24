@@ -1,7 +1,7 @@
 @import '../utils/variables';
 
 main {
-  background-image: url('/test.png');
+  background-image: url('/agrovale2.JPG');
   background-color: #fff;
   background-repeat: no-repeat;
   background-size: cover;
@@ -40,7 +40,16 @@ main {
       p {
         font-size: 1.1rem;
         font-weight: 700;
+        margin-bottom: 2rem;
       }
+    }
+    .main_button {  
+      padding: .7rem 1.2rem;
+      background-color: #DBA55D;
+      color: #ffffff;
+      font-weight: 700;
+      letter-spacing: 1px;
+      font-family: 'Montserrat', sans-serif;
     }
   }
 }

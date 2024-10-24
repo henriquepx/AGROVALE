@@ -29,7 +29,7 @@ const Timeline = () => {
             <h2>Expansão de Parcerias</h2>
             <p>
               Em 2005, a Agrovale expandiu suas parcerias para exportação, fechando acordos com mercados internacionais. Essa expansão permitiu que a pimenta do reino da Agrovale ganhasse reconhecimento em diversos países.
-            </p>
+              </p>
           </div>
         </div>
 
