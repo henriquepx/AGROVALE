@@ -24,7 +24,7 @@
                 z-index: 1;
                 width: 200px;
                 border-radius: 50%;
-                border: 3px solid #441C1C;
+                border: 3px solid $primary-color;
             }
             .pimenta-img {
                 border-top-right-radius: 55px;
@@ -46,10 +46,10 @@
                 }
             }
             .pimenta-marker {
-                background-color: #441C1C;
+                background-color: $primary-color;
                 padding: .4rem;
                 color: #fff;
-                border-left: 10px solid #DBA55D;
+                border-left: 10px solid $secondary-color;
                 .doyouknow {
                     font-size: 1.2rem;
                     margin-bottom: 15px;

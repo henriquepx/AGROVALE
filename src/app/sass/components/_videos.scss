@@ -89,7 +89,7 @@
     display: block;
     width: 80px;
     height: 80px;
-    background: #441C1C;
+    background: $primary-color;
     border-radius: 50%;
     animation: pulse-border 1500ms ease-out infinite;
   }
@@ -104,13 +104,13 @@
     display: block;
     width: 80px;
     height: 80px;
-    background: #441C1C;
+    background: $primary-color;
     border-radius: 50%;
     transition: all 200ms;
   }
   
   .video-play-button:hover:after {
-    background-color: darken(#441C1C, 10%);
+    background-color: darken($primary-color, 10%);
   }
   
   .video-play-button img {

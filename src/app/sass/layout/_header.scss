@@ -6,7 +6,7 @@ header {
     flex-direction: column;
     .headertop {
         width: 100%;
-        background-color: #441C1C;
+        background-color: $primary-color;
         .headertopsize {
             max-width: 1300px;
             width: 100%;
@@ -74,7 +74,7 @@ header {
                                 text-decoration: underline;
                             }
                             a {
-                                color: #441C1C;
+                                color: $primary-color;
                                 font-weight: 600;
                                 font-size: 1.1rem;
                                 

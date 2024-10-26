@@ -22,7 +22,7 @@
               .title-contact {
                 font-size: 18px;
                 font-weight: 800;
-                color: #441C1C;
+                color: $primary-color;
               }
               .p-contact {
                 font-size: 14px;
@@ -95,7 +95,7 @@
             width: 100%;
             padding: 12px;
             border-radius: 8px;
-            background: #DBA55D;
+            background: $secondary-color;
             color: #fff;
             font-size: 16px;
             letter-spacing: 2px;

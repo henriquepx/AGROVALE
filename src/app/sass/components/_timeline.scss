@@ -27,7 +27,7 @@
             content: "";
             width: 3px;
             height: 100%;
-            background: #441C1C;
+            background: $primary-color;
             left: 50%;
             top: 0;
             position: absolute;
@@ -48,7 +48,7 @@
                 clear: both;
             }
             .timeline-icon {
-                background: #441C1C;
+                background: $primary-color;
                 width: 40px;
                 height: 40px;
                 position: absolute;
@@ -79,11 +79,11 @@
                     height: 0;
                     border-top: 7px solid transparent;
                     border-bottom: 7px solid transparent;
-                    border-left: 7px solid #441C1C;
+                    border-left: 7px solid $primary-color;
                   }
                 h2 {
                     padding: 15px;
-                    background: #441C1C;
+                    background: $primary-color;
                     color: #fff;
                     margin: -20px -20px 0 -20px;
                     font-weight: 300;
@@ -99,7 +99,7 @@
                   right: 45%;
                   left: inherit;
                   border-left: 0;
-                  border-right: 7px solid #441C1C;
+                  border-right: 7px solid $primary-color;
                 }
               }
             }
@@ -128,7 +128,7 @@
       left: 10%;
       margin-left: -6px;
       border-left: 0;
-      border-right: 7px solid #441C1C;
+      border-right: 7px solid $primary-color;
     }
   
     #timeline .timeline-item .timeline-icon {

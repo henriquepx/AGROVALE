@@ -26,7 +26,7 @@
             height: 50px;
             display: block;
             margin: 0 10px;
-            background-color: #441C1C;
+            background-color: $primary-color;
         }
         .card-unit {
             display: flex;
@@ -46,7 +46,7 @@
                     justify-content: center;
                     color: #fff;
                     font-size: 1.5rem;
-                    background-color: #441C1C;
+                    background-color: $primary-color;
                     padding: .2rem;
                     border-radius: 30px 30px;
                 }

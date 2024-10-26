@@ -34,7 +34,7 @@
     .cardimportexport-text {
         flex: 1;
         padding: 3rem 6rem;
-        background-color: #441C1C;
+        background-color: $primary-color;
         color: #fff;
         display: flex;
         flex-direction: column;
@@ -67,10 +67,11 @@
                     display: flex;
                     justify-content: center;
                     align-items: center;
-                    border: 1px solid #fff;
+                    border: 1px solid $secondary-color;
                     border-radius: 50%;
-                    background-color: #4b3535;
+                    background-color: $primary-color;
                     padding: 1rem;
+                    color: $secondary-color;
                     svg {
                         width: 40px;
                         height: 40px;
