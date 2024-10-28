@@ -10,6 +10,7 @@ const montserrat = Montserrat({
 export const metadata: Metadata = {
   title: "Agrovale Importação e Exportação",
   description: "-",
+  icons: "/icon.jpg",
 };
 
 export default function RootLayout({
