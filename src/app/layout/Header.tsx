@@ -1,3 +1,5 @@
+"use client"
+import { useState } from 'react';
 import Image from 'next/image';
 import '../sass/layout/_header.scss';
 import Logo from '../assets/icon.png';
@@ -5,8 +7,16 @@ import BrazilFlag from '../assets/Brazil.png';
 import UK from '../assets/uk.png';
 import { MdEmail, MdPhone } from "react-icons/md";
 import { FaInstagram, FaFacebook, FaWhatsapp } from "react-icons/fa";
+import ResponsiveMenu from '../components/ResponsiveMenu';
 
 const Header = () => {
+    const [isOpen, setIsOpen] = useState(false);
+
+    const toggleMenu = () => {
+        setIsOpen(!isOpen);
+      };
+
+
   return (
     <header>
 
@@ -54,10 +64,18 @@ const Header = () => {
             <Image src={BrazilFlag} alt="Brazil Flag" width={30} />
             <Image src={UK} alt="UK Flag" width={30} />
           </div>
-        </div>
-      </div>
 
+          <div className='menu-hamburger' onClick={toggleMenu}>
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>  
+      </div>
+      {isOpen &&  <ResponsiveMenu isOpen={isOpen} onClose={toggleMenu} />} 
     </header>
+
+    
   )
 }
 

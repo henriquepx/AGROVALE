@@ -19,6 +19,9 @@ header {
                 display: flex;
                 align-items: center;
                 gap: 1.5rem;
+                @media (max-width: 768px) {
+                    gap: .8rem;
+                }
                 .header-contact-link-left, .header-contact-link-right {
                     a {
                         display: flex;
@@ -27,6 +30,9 @@ header {
                         color: #fff;
                         p {
                             color: #fff;
+                            @media (max-width: 768px) {
+                                display: none;
+                            }
                         }
                     }
                 }
@@ -66,6 +72,9 @@ header {
                         display: flex;
                         align-items: center;
                         gap: 1.5rem;
+                        @media (max-width: 768px) {
+                            display: none;
+                        }
                         li {
                             &:nth-child(1) {
                                 text-decoration: underline;
@@ -87,8 +96,36 @@ header {
                 display: flex;
                 align-items: center;
                 gap: .5rem;
+                @media (max-width: 768px) {
+                    display: none;
+                }
                 img {
                     cursor: pointer;
+                }
+            }
+            .menu-hamburger {
+                cursor: pointer;
+                padding: 5px;
+                margin-bottom: 5px;
+                border-radius: 10px;
+                z-index: 10;
+                display: none;
+                position: absolute;
+                right: 15px;
+                z-index: 999;
+                @media (max-width: 768px) {
+                    display: block;
+                }
+                &.open {
+                    right: 0;
+                }
+                span {
+                    display: block;
+                    width: 25px;
+                    height: 3px;
+                    margin: 5px auto 0px auto;
+                    transition: all 0.3s ease-in-out;
+                    background-color: #000000;
                 }
             }
         }

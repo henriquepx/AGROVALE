@@ -1,0 +1,79 @@
+@import '../utils/variables';
+
+@keyframes slideIn {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+.responsive-menu-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  z-index: 1000;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.responsive-menu-overlay.open {
+  opacity: 1;
+  visibility: visible;
+  overflow: hidden; 
+}
+
+.responsive-menu {
+  background: #fff;
+  width: 80%;
+  height: 100dvh;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 990;
+  transition: right 0.3s ease-in-out; 
+  padding: 15px 20px;
+  .responsive-menu-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .responsive-menu-logo-flags {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+    }
+  }
+}
+
+.responsive-menu.open {
+  animation: slideIn 0.6s forwards; 
+}
+
+.close-menu {
+  background: none;
+  border: none;
+  font-size: 2rem;
+  color: $secondary-color;
+  cursor: pointer;
+}
+
+nav ul {
+  list-style: none;
+  padding: 20px;
+  margin: 0;
+}
+
+nav ul li {
+  margin: 15px 0;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #333;
+  font-size: 18px;
+}
