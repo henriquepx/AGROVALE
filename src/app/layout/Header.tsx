@@ -8,14 +8,17 @@ import UK from '../assets/uk.png';
 import { MdEmail, MdPhone } from "react-icons/md";
 import { FaInstagram, FaFacebook, FaWhatsapp } from "react-icons/fa";
 import ResponsiveMenu from '../components/ResponsiveMenu';
-
+import { useTranslations } from 'next-intl';
+import { Link } from '../../i18n/routing';
+  
 const Header = () => {
     const [isOpen, setIsOpen] = useState(false);
 
     const toggleMenu = () => {
         setIsOpen(!isOpen);
-      };
-
+  };
+  
+    const t = useTranslations('Header');
 
   return (
     <header>
@@ -51,18 +54,18 @@ const Header = () => {
             <Image src={Logo} alt="Agrovale Importação e Exportação" width={60} />
             <nav className='header-nav-links'>
               <ul>
-                <li><a href='#'>Home</a></li>
-                <li><a href='#'>Sobre</a></li>
-                <li><a href='#'>Equipe</a></li>
-                <li><a href='#'>Curiosidades</a></li>
-                <li><a href='#'>Contato</a></li>
+                <li><a href='#'>{t('Home')}</a></li>
+                <li><a href='#'>{t('Sobre')}</a></li>
+                <li><a href='#'>{t('Equipe')}</a></li>
+                <li><a href='#'>{t('Curiosidade')}</a></li>
+                <li><a href='#'>{t('Contato')}</a></li>
               </ul>
             </nav>
           </div>
 
           <div className='header-logo-flags'>
-            <Image src={BrazilFlag} alt="Brazil Flag" width={30} />
-            <Image src={UK} alt="UK Flag" width={30} />
+            <Link href="/pt"><Image src={BrazilFlag} alt="Brazil Flag" width={30} /></Link>
+            <Link href="/en"><Image src={UK} alt="UK Flag" width={30} /></Link>
           </div>
 
           <div className='menu-hamburger' onClick={toggleMenu}>
