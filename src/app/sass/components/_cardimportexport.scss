@@ -2,10 +2,8 @@
 
 .cardimportexport {
     display: flex;
-    align-items: stretch;
     width: 100%;
     height: 100%;
-    
     .cardimportexport-image {
         flex: 1;
         position: relative;
@@ -28,11 +26,14 @@
             background-repeat: no-repeat;
             background-size: contain;
             background-position: center;
+            @media (max-width: 768px) {
+                display: none;
+            }
         }
     }
 
     .cardimportexport-text {
-        flex: 1;
+        flex: 2;
         padding: 3rem 6rem;
         background-color: $primary-color;
         color: #fff;
@@ -40,7 +41,6 @@
         flex-direction: column;
         .cardimportexport-text-p {
             line-height: 1.5;
-            margin: 10px 0;
         }
         h1 {
             font-size: 2rem;
@@ -55,9 +55,12 @@
             .info-item {
                 display: flex;
                 width: 100%;
-                justify-content: center;
                 align-items: center;
                 gap: 2rem;
+                @media (max-width: 768px) {
+                    flex-direction: column;
+                    align-items: baseline;
+                }
                 .title-info-content {
                     font-size: 1.2rem;
                     font-weight: bold;
@@ -83,16 +86,13 @@
 
     @media (max-width: 768px) {
         flex-direction: column;
-
         .cardimportexport-image,
         .cardimportexport-text {
             width: 100%;
             height: auto;
         }
-
         .cardimportexport-text {
             padding: 1.5rem;
-            
             .info-section {
                 grid-template-columns: 1fr;
             }

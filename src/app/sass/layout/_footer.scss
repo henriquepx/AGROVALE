@@ -15,6 +15,10 @@ footer {
             display: flex;
             justify-content: space-between;
             padding: 1.5rem .5rem 3rem .5rem;
+            @media (max-width: 768px) {
+                flex-direction: column;
+                gap: 2rem;
+            }
             .footer-top-img {
                 width: 130px;
                 margin-bottom: auto;
@@ -81,6 +85,9 @@ footer {
 
             display: flex;
             justify-content: space-between;
+            @media (max-width: 768px) {
+                flex-direction: column;
+            }
             a {
                 color: #fff;
                 text-decoration: underline;

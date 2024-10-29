@@ -7,7 +7,7 @@
     align-items: center;
     justify-content: center;
     gap: 1rem;
-    
+    padding: 0 13px;
     .cardhome-container {
         display: flex;
         align-items: center;
@@ -21,12 +21,20 @@
         z-index: 10;
         border-radius: 15px;
         box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        @media (max-width: 768px) {
+            flex-direction: column;
+            gap: .3rem;
+        }
         .divider-card {
             width: 5px;
             height: 50px;
             display: block;
             margin: 0 10px;
             background-color: $primary-color;
+            @media (max-width: 768px) {
+                width: 50px;
+                height: 5px;
+            }
         }
         .card-unit {
             display: flex;
@@ -38,7 +46,7 @@
                 align-items: center;
                 gap: .5rem;
                 h2 {
-                    font-size: 1.3rem;
+                    font-size: 1.1rem;
                 }
                 span {
                     display: flex;

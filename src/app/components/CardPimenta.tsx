@@ -14,9 +14,7 @@ const CardPimenta = () => {
                         <p><span className="doyouknow">Você sabia?</span><br />A pimenta-do-reino já foi considerada tão valiosa que era usada como moeda de troca na Europa. Além disso, sua demanda impulsionou rotas de comércio e expedições históricas.</p>
                     </div>
                 </div>
-                <div className="imgs-pimenta">
-                    <Image className="pimenta-img" src="/AGROVALE.jpg" alt="Agro Time" width={700} height={700} />
-                </div>
+                <Image className="pimenta-img" src="/AGROVALE.jpg" alt="Agro Time" layout="responsive" width={700} height={700} />
             </div>  
         </section>
     );  
