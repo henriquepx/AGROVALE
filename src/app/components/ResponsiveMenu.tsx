@@ -2,7 +2,7 @@ import { useEffect } from 'react';
 import '../sass/components/_responsivemenu.scss';
 import Image from 'next/image';
 import Logo from '../assets/icon.png';
-import BrazilFlag from '../assets/brazil.png';
+import BrazilFlag from '@assets/brazil.png';
 import UK from '../assets/uk.png';
 
 interface ResponsiveMenuProps {
