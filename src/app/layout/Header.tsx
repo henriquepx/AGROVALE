@@ -3,7 +3,7 @@ import { useState } from 'react';
 import Image from 'next/image';
 import '../sass/layout/_header.scss';
 import Logo from '../assets/icon.png';
-import BrazilFlag from '../assets/Brazil.png';
+import BrazilFlag from '../assets/brazil.png';
 import UK from '../assets/uk.png';
 import { MdEmail, MdPhone } from "react-icons/md";
 import { FaInstagram, FaFacebook, FaWhatsapp } from "react-icons/fa";
