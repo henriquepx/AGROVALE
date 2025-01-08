@@ -1,10 +1,10 @@
 import type { Metadata } from "next";
-import { Montserrat } from 'next/font/google';
-import './sass/main.css';
+import { Montserrat } from "next/font/google";
+import "./sass/main.css";
 
 const montserrat = Montserrat({
-  subsets: ['latin'],
-  weight: ['300', '400', '500', '600', '700', '800', '900'],
+  subsets: ["latin"],
+  weight: ["300", "400", "500", "600", "700", "800", "900"],
 });
 
 export const metadata: Metadata = {
@@ -15,14 +15,14 @@ export const metadata: Metadata = {
 
 export default function RootLayout({
   children,
-}: Readonly<{
+  params,
+}: {
   children: React.ReactNode;
-}>) {
+  params: { locale: string };
+}) {
   return (
-    <html lang="pt-BR">
-      <body className={montserrat.className}>
-        {children}
-      </body>
+    <html lang={params?.locale || "pt-BR"}>
+      <body className={montserrat.className}>{children}</body>
     </html>
   );
 }
